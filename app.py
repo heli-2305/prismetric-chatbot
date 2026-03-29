@@ -2,6 +2,9 @@ import streamlit as st
 import pandas as pd
 import joblib
 import os
+from sklearn.pipeline import Pipeline
+from sklearn.feature_extraction.text import TfidfVectorizer
+from sklearn.linear_model import LogisticRegression
 
 st.set_page_config(
     page_title="Prismetric Service Chatbot",
@@ -12,16 +15,31 @@ st.set_page_config(
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 
 @st.cache_resource
-def load_model():
-    return joblib.load(os.path.join(BASE_DIR, "intent_classifier_logreg.joblib"))
+def train_model():
+    df = pd.read_csv(os.path.join(BASE_DIR, "chatbot_intents_dataset_v2.csv"))
+    if "id" in df.columns:
+        df = df.drop(columns=["id"])
+    X = df["text"].astype(str)
+    y = df["intent"].astype(str)
+    pipeline = Pipeline([
+        ("tfidf", TfidfVectorizer(
+            ngram_range=(1, 2),
+            max_features=5000,
+            lowercase=True,
+            strip_accents="unicode"
+        )),
+        ("clf", LogisticRegression(max_iter=1000))
+    ])
+    pipeline.fit(X, y)
+    return pipeline
 
 @st.cache_data
 def load_data():
     services = pd.read_csv(os.path.join(BASE_DIR, "prismetric_services.csv"))
-    pricing = pd.read_csv(os.path.join(BASE_DIR, "prismetric_pricing_models.csv"))
+    pricing  = pd.read_csv(os.path.join(BASE_DIR, "prismetric_pricing_models.csv"))
     return services, pricing
 
-model = load_model()
+model = train_model()
 services_df, pricing_df = load_data()
 
 CONFIDENCE_THRESHOLD = 0.60
