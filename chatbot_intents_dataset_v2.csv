@@ -1,0 +1,176 @@
+id,intent,text
+1,ask_service_list,What services do you offer?
+2,ask_service_list,Show me all the services you provide.
+3,ask_service_list,What does your company do?
+4,ask_service_list,Give me your complete service list.
+5,ask_service_list,What solutions does Prismetric have?
+6,ask_service_list,Tell me the range of services you provide.
+7,ask_service_list,Can you list out all your services?
+8,ask_service_list,What are your main offerings?
+9,ask_service_list,What kind of development or AI services do you provide?
+10,ask_service_list,What does Prismetric specialize in?
+11,ask_service_details,Tell me about AI Development.
+12,ask_service_details,What is Machine Learning Development?
+13,ask_service_details,Explain your Web Development service.
+14,ask_service_details,What does Data Engineering mean?
+15,ask_service_details,Can you describe your Chatbot Development service?
+16,ask_service_details,What do you do in AI Integration services?
+17,ask_service_details,Give me details of Computer Vision service.
+18,ask_service_details,What does your SaaS app development include?
+19,ask_service_details,What is RAG as a Service?
+20,ask_service_details,Explain Enterprise AI Development.
+21,ask_ai_services,What AI services do you provide?
+22,ask_ai_services,Show me all your AI development offerings.
+23,ask_ai_services,Do you build AI applications?
+24,ask_ai_services,List your artificial intelligence services.
+25,ask_ai_services,What ML/AI solutions do you offer?
+26,ask_ai_services,Do you provide generative AI services?
+27,ask_ai_services,Tell me all services under your AI category.
+28,ask_ai_services,Do you develop NLP or LLM solutions?
+29,ask_ai_services,What AI modules can you build for clients?
+30,ask_ai_services,Can you show me all AI-related capabilities?
+31,ask_development_services,Do you build mobile apps?
+32,ask_development_services,Show me all your development services.
+33,ask_development_services,What kind of web development do you offer?
+34,ask_development_services,Do you develop software for businesses?
+35,ask_development_services,List your mobile and SaaS development services.
+36,ask_development_services,What development solutions do you specialize in?
+37,ask_development_services,Can you build an e-commerce site?
+38,ask_development_services,What technologies do you use for app development?
+39,ask_development_services,Tell me your software development capabilities.
+40,ask_development_services,Provide all your development-related services.
+41,ask_industry_solutions,What industries do you work with?
+42,ask_industry_solutions,Do you have solutions for healthcare?
+43,ask_industry_solutions,Show me all industry-specific services.
+44,ask_industry_solutions,Do you build apps for logistics companies?
+45,ask_industry_solutions,Do you offer FinTech AI solutions?
+46,ask_industry_solutions,Do you work with retail or ecommerce industries?
+47,ask_industry_solutions,What industry verticals do you support?
+48,ask_industry_solutions,Tell me industry-wise service categories.
+49,ask_industry_solutions,Do you have solutions for the travel sector?
+50,ask_industry_solutions,What solutions do you offer in education?
+51,ask_pricing_models,How do your pricing models work?
+52,ask_pricing_models,What pricing strategies do you use?
+53,ask_pricing_models,Do you offer fixed price projects?
+54,ask_pricing_models,Explain your monthly pricing model.
+55,ask_pricing_models,What is resource-based pricing?
+56,ask_pricing_models,How do you charge clients for projects?
+57,ask_pricing_models,Tell me the difference between monthly and fixed price.
+58,ask_pricing_models,How does your pricing structure operate?
+59,ask_pricing_models,What pricing options do you have?
+60,ask_pricing_models,Explain your billing model.
+61,ask_cost_estimate,How much will my project cost?
+62,ask_cost_estimate,Can you estimate the price for my idea?
+63,ask_cost_estimate,What is the approximate cost for app development?
+64,ask_cost_estimate,How do I know the cost for my AI application?
+65,ask_cost_estimate,Can you tell me the budget for my project?
+66,ask_cost_estimate,Give me a rough cost estimate.
+67,ask_cost_estimate,How expensive is AI development?
+68,ask_cost_estimate,How much do you charge for a mobile app?
+69,ask_cost_estimate,What is the typical cost range?
+70,ask_cost_estimate,How can I calculate my project cost?
+71,ask_recommendation,I don't know what service I need.
+72,ask_recommendation,Help me choose the right service.
+73,ask_recommendation,I have an idea but I'm not sure which service fits.
+74,ask_recommendation,Suggest a suitable service based on my requirements.
+75,ask_recommendation,What should I choose for an AI-based solution?
+76,ask_recommendation,Can you recommend a service for my project?
+77,ask_recommendation,Which service is best for a startup like mine?
+78,ask_recommendation,I want an app for ecommerce; what should I select?
+79,ask_recommendation,What service do I need for healthcare AI?
+80,ask_recommendation,Recommend the right service category for me.
+81,ask_contact_info,How can I contact you?
+82,ask_contact_info,Give me the company email.
+83,ask_contact_info,How do I reach your support team?
+84,ask_contact_info,I want to talk to your experts.
+85,ask_contact_info,Provide your contact details.
+86,ask_service_list,What all can you do for my business?
+87,ask_service_list,Show me a summary of your core services.
+88,ask_service_list,I want to know everything your company offers.
+89,ask_service_list,Give me an overview of your solutions.
+90,ask_service_list,What types of projects do you usually work on?
+91,ask_service_list,List the categories of services you provide.
+92,ask_service_list,Can you briefly tell me your main service areas?
+93,ask_service_list,What services are available if I work with you?
+94,ask_service_list,What kind of solutions does your team build?
+95,ask_service_list,Tell me about your different service lines.
+96,ask_service_details,Can you explain what your AI consulting service includes?
+97,ask_service_details,What do you offer under Data Engineering exactly?
+98,ask_service_details,I want more details on your AI Integration services.
+99,ask_service_details,How does your Computer Vision service help clients?
+100,ask_service_details,What is included in your Enterprise AI Development offering?
+101,ask_service_details,Describe your NLP services in more detail.
+102,ask_service_details,What do you mean by AI Agent Development?
+103,ask_service_details,Can you tell me more about your LLM development service?
+104,ask_service_details,What is covered if I choose Chatbot Development?
+105,ask_service_details,Explain what your Mobile App Development service provides.
+106,ask_ai_services,Do you provide end-to-end AI solutions?
+107,ask_ai_services,Show me only the AI-related services you have.
+108,ask_ai_services,"I am interested in your AI capabilities, what can you do?"
+109,ask_ai_services,What AI and ML services are part of your offerings?
+110,ask_ai_services,Do you have any services for building LLM-based systems?
+111,ask_ai_services,What AI related services can support my product?
+112,ask_ai_services,I want to see just your AI service options.
+113,ask_ai_services,Are there any advanced AI services you specialize in?
+114,ask_ai_services,Which of your services are focused on artificial intelligence?
+115,ask_ai_services,Can you list your AI and machine learning service offerings?
+116,ask_development_services,Do you create both web and mobile applications?
+117,ask_development_services,What development services do you have besides AI?
+118,ask_development_services,Can you help me with custom software development?
+119,ask_development_services,Do you build SaaS platforms for startups?
+120,ask_development_services,I need a website and an app; can you do both?
+121,ask_development_services,Show me your software and app development services.
+122,ask_development_services,What kind of application development do you provide?
+123,ask_development_services,Do you develop e-commerce platforms from scratch?
+124,ask_development_services,Do you have any services for SaaS app development?
+125,ask_development_services,What are your core development offerings?
+126,ask_industry_solutions,Do you offer solutions for financial services companies?
+127,ask_industry_solutions,I work in logistics; do you have anything for that domain?
+128,ask_industry_solutions,What can you do for ecommerce businesses specifically?
+129,ask_industry_solutions,Do you build solutions for hospitals or healthcare startups?
+130,ask_industry_solutions,Are there any services tailored to education or e-learning?
+131,ask_industry_solutions,What type of solutions do you offer for the travel industry?
+132,ask_industry_solutions,Can you tell me your offerings by industry vertical?
+133,ask_industry_solutions,Do you have experience in building apps for real estate?
+134,ask_industry_solutions,Show me the industries where you have AI solutions.
+135,ask_industry_solutions,I want to know which sectors your solutions are designed for.
+136,ask_pricing_models,What are the different ways you charge for projects?
+137,ask_pricing_models,Do you support both fixed price and flexible pricing?
+138,ask_pricing_models,Can you explain your fixed price and monthly pricing options?
+139,ask_pricing_models,How does your resource hiring model work?
+140,ask_pricing_models,What billing models are available if I work with your team?
+141,ask_pricing_models,Do you provide a dedicated developer pricing option?
+142,ask_pricing_models,How is fixed price different from resource pricing with you?
+143,ask_pricing_models,Can you describe your pricing structure in simple terms?
+144,ask_pricing_models,What kind of payment models can I choose from?
+145,ask_pricing_models,Do you offer flexible pricing depending on project scope?
+146,ask_cost_estimate,Can you give me an idea of how much this would cost?
+147,ask_cost_estimate,I want a rough ballpark budget for my project.
+148,ask_cost_estimate,How do I find out the price for my app idea?
+149,ask_cost_estimate,What would be the estimated cost for an AI-based solution?
+150,ask_cost_estimate,About how much do you charge for building a mobile application?
+151,ask_cost_estimate,Can you guide me on the expected budget range?
+152,ask_cost_estimate,I need a price estimate before starting; can you help?
+153,ask_cost_estimate,How do you usually estimate the cost for a new project?
+154,ask_cost_estimate,Is there a way to calculate the cost of my app online?
+155,ask_cost_estimate,What should I expect in terms of pricing for a medium-sized app?
+156,ask_recommendation,I have a business idea; which of your services should I choose?
+157,ask_recommendation,"I am not sure if I need AI or just app development, can you guide me?"
+158,ask_recommendation,Can you help me decide between AI Development and normal app development?
+159,ask_recommendation,Which service is suitable if I want analytics and reports?
+160,ask_recommendation,I need both mobile and AI features; what do you suggest?
+161,ask_recommendation,What would you recommend for a startup with a limited budget?
+162,ask_recommendation,Can you suggest the right service for a logistics company like mine?
+163,ask_recommendation,"I want to use AI but I'm confused which service fits, can you help?"
+164,ask_recommendation,Which service option is ideal for a proof-of-concept project?
+165,ask_recommendation,"Based on my domain, which service category should I go for?"
+166,ask_contact_info,How do I get in touch with your team?
+167,ask_contact_info,Where can I find your contact information?
+168,ask_contact_info,Is there an email address to reach you?
+169,ask_contact_info,Do you have a contact form or support email?
+170,ask_contact_info,How can I contact your sales or consulting team?
+171,ask_contact_info,"I want to connect with you, what is your contact option?"
+172,ask_contact_info,Please share your official contact details.
+173,ask_contact_info,Is there a way to schedule a call with you?
+174,ask_contact_info,How do I reach out for a project discussion?
+175,ask_contact_info,What is the best way to contact Prismetric?
