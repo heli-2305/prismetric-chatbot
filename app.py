@@ -42,7 +42,7 @@ def load_data():
 model = train_model()
 services_df, pricing_df = load_data()
 
-CONFIDENCE_THRESHOLD = 0.60
+CONFIDENCE_THRESHOLD = 0.30
 
 def predict_intent(user_input):
     probabilities = model.predict_proba([user_input])[0]
