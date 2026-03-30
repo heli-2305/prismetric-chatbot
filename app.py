@@ -44,6 +44,22 @@ services_df, pricing_df = load_data()
 CONFIDENCE_THRESHOLD = 0.30
 
 def predict_intent(user_input):
+    user_lower = user_input.lower()
+
+    # Rule based overrides
+    contact_keywords = ["contact", "reach", "email", "phone", "call", "touch", "connect", "details", "information"]
+    if any(word in user_lower for word in contact_keywords):
+        return "ask_contact_info", 1.0
+
+    pricing_keywords = ["pricing", "price", "billing", "payment", "charge", "fixed", "monthly", "resource pricing"]
+    if any(word in user_lower for word in pricing_keywords):
+        return "ask_pricing_models", 1.0
+
+    cost_keywords = ["cost", "budget", "estimate", "expensive", "how much", "fee"]
+    if any(word in user_lower for word in cost_keywords):
+        return "ask_cost_estimate", 1.0
+
+    # ML model for everything else
     probabilities = model.predict_proba([user_input])[0]
     classes       = model.classes_
     best_index    = probabilities.argmax()
