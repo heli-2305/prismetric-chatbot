@@ -78,7 +78,7 @@ def get_response(intent):
         models_list = ", ".join(pricing_df["model_name"].tolist())
         return f"Cost depends on project scope and complexity. Prismetric uses: {models_list}. For an estimate visit prismetric.com."
     if intent == "ask_recommendation":
-    return (
+        return (
         "Based on your needs, here are some recommendations:\n\n"
         "🏥 **Healthcare** → Healthcare AI Solutions, ML Development, Data Engineering\n\n"
         "🛒 **Ecommerce** → AI Solutions for Ecommerce, Mobile App Development, SaaS App Development\n\n"
@@ -90,7 +90,7 @@ def get_response(intent):
         "🛍️ **Retail** → Retail AI Solutions, AI Development, ML Development\n\n"
         "Tell me your industry and I can give a more specific suggestion. "
         "Or visit prismetric.com for a free consultation."
-    )
+                )
     if intent == "ask_contact_info":
         return "You can contact Prismetric at prismetric.com. Look for the Contact Us or Get a Free Quote option."
     return "I am not sure I understood that. You can ask me about services, pricing, cost estimates, or recommendations."
